@@ -198,7 +198,7 @@ button,
   margin: 0;
   padding: 0.25rem;
   border: 1px solid var(--charcoal);
-} */
+}
 
 textarea {
   height: 4rem;
@@ -206,7 +206,7 @@ textarea {
 
 button {
   height: 2.5rem;
-} */
+}
 
 form>* {
   margin-top: 1rem;
