@@ -29,7 +29,7 @@ export default function IndexPage() {
   if (isError) return <Message content="An error occured..." />
   if (!data) return <Message content="No data could be loaded..." />
 
-  // Just for convenience
+  //returns the the card
   const teams = filterTeamData(sortTeamData(data.data, sortKey), filterKey);
   return (
     <>
