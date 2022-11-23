@@ -1,15 +1,5 @@
-
 import { useState } from "react";
 
-// This is a partially complete contact form, to show the basics of
-// React useState to handle form data in a react app, which is a very common
-// requirement. Notice how we listen to event handlers like in standard JavaScript
-// And then we store our data using useState
-// Also notice that useState, when initialized, returns an array of:
-// i) the current state
-// ii) a function to create a new state
-// Pay attention to how both of these are used, as this is a simple example of
-// The primary way of managing data/state in React
 export default function ContactPage() {
 
   const [formData, setFormData] = useState({});

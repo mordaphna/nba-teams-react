@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 import DataIntro from "../components/data-intro";
 import InfoList from "../components/info-list";
@@ -34,7 +36,7 @@ export default function IndexPage() {
   return (
     <>
       <DataIntro changeHandler={getDataQueryKeys} />
-      <InfoList info={teams} />
+      <InfoList infor={teams} />
     </>
   )
 }
