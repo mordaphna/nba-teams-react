@@ -33,7 +33,6 @@ h1{
 img{
   height: 50px;
   width: 30px;
-  /* width: min-content; */
 }
 .sortFilter{
   flex-basis: 100%;
@@ -88,10 +87,6 @@ img{
 
 }
 
-/* .item.meta {
- flex-basis: 50%;
-  
-} */
 
 .item.cell {
   flex-basis: 25%;
@@ -122,7 +117,6 @@ body {
   --white: #fbfafa;
   --charcoal: rgb(45, 43, 43);
   --layout-guide-item: rgba(255, 89, 0, 0.975);
-  /* --layout-guide-content: rgb(0, 183, 255); */
 }
 
 .container {
@@ -130,12 +124,7 @@ body {
   margin: 0 auto;
 } 
 
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 25%;
 
-} */
 .item.intro{
   flex-basis: 50%;
 
@@ -145,17 +134,18 @@ body {
   box-sizing: border-box;
   flex-grow: 0;
   flex-basis: 100%;
-} */
-
-/* .content {
-  flex-grow: 0;
-  flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-}
+} 
 
 /* adjustments for medium screens, like some tablets or landscape on a mobile */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .item.control-container {
+    flex-basis: 50%;
+  }
+
+  .item.control {
+    flex-basis: 50%;
+  }
+}
 
 /* adjustments for medium-large screens, like some tablets */
 @media (min-width: 768px) {
@@ -164,6 +154,15 @@ body {
   .item.navbar-menu {
     flex-basis: 50%;
   }
+
+  .item.card {
+    flex-basis: 50%;
+  }
+
+  .item.intro {
+    flex-basis: 50%;
+  }
+
 }
 
 /* adjustments for large screens, like laptops and desktops */
@@ -173,14 +172,14 @@ body {
     margin: 0 auto;
   }
 
+  .item.card {
+    flex-basis: 33.33333333333333333333333333333333333%;
+  }
+
 }
 
-/* body {
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-  color: var(--charcoal);
-} */
+
+
 
 a {
   color: var(--deep-blue);
