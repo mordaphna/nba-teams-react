@@ -1,6 +1,6 @@
 import Info from "./info";
 
-export default function InfoList({ info }) {
+export default function InfoList({ info}) {
   //we can send props and
   //const info = props.info
 
