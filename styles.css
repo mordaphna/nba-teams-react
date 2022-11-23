@@ -1,3 +1,116 @@
+
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  background-image: "https://cdn.nba.com/next/icons/icon-basketball-court.svg";
+}
+h3 {
+  text-align: center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+
+  
+}
+
+.item {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-basis: 100%;
+
+}
+h1{
+  text-align: center;
+  color: darkgray;
+  font-family: monospace;
+  font-size: 50;
+}
+img{
+  height: 50px;
+  width: 30px;
+  /* width: min-content; */
+}
+.sortFilter{
+  flex-basis: 100%;
+  flex-grow: 0;
+}
+
+.check {
+  flex-grow: 0;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 20px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  box-shadow: 1px 4px 10px;
+  transition: box-shadow 0.1s, transform 0.1s;
+  backdrop-filter: blur(15px); 
+  border-radius: 10px;
+  text-align: center;
+  display:block;
+  color: red;
+
+}
+
+.item.cotrol.container{
+  flex-basis: 25%;
+}
+.item.controls{
+  flex-basis: 50%;
+}
+
+.item.card{
+  flex-basis: 25%;
+  flex-grow: 0;
+
+}
+
+.content {
+
+  flex-grow: 0;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 20px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  box-shadow: 0px 5px 10px;
+  transition: box-shadow 0.15s, transform 0.15s;
+    backdrop-filter: blur(10px);
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+
+
+}
+
+/* .item.meta {
+ flex-basis: 50%;
+  
+} */
+
+.item.cell {
+  flex-basis: 25%;
+}
+ 
+
+
+body {
+  background-color: #f5f5f5;
+  color: #2d2c2c;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url("https://cdn.nba.com/next/icons/icon-basketball-court.svg");
+
+}
+
+
+
+
+
 :root {
   --font-family: "SF Pro Text",
     "SF Pro Icons",
@@ -5,47 +118,36 @@
     "Helvetica",
     "Arial",
     sans-serif;
-  --deep-blue: rgb(49, 11, 218);
   --deep-red: rgb(239, 6, 72);
   --white: #fbfafa;
   --charcoal: rgb(45, 43, 43);
   --layout-guide-item: rgba(255, 89, 0, 0.975);
-  --layout-guide-content: rgb(0, 183, 255);
+  /* --layout-guide-content: rgb(0, 183, 255); */
 }
-
-/* start design helpers */
-
-.item {
-  border: 1px dotted var(--layout-guide-item);
-}
-
-.content {
-  border: 1px dotted var(--layout-guide-content);
-}
-
-.card-content {
-  border: 1px solid var(--layout-guide-content);
-}
-
-/* end design helpers */
 
 .container {
   width: 100%;
   margin: 0 auto;
-}
+} 
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 25%;
+
+} */
+.item.intro{
+  flex-basis: 50%;
+
 }
 
 .item {
   box-sizing: border-box;
   flex-grow: 0;
   flex-basis: 100%;
-}
+} */
 
-.content {
+/* .content {
   flex-grow: 0;
   flex-basis: 100%;
   box-sizing: border-box;
@@ -73,28 +175,31 @@
 
 }
 
-body {
+/* body {
   font-family: var(--font-family);
   margin: 0;
   padding: 0;
   color: var(--charcoal);
-}
+} */
 
 a {
   color: var(--deep-blue);
+}
+.buttoms{
+  flex-basis: 50%;
 }
 
 input,
 textarea,
 button,
-select {
+.select {
   display: block;
   height: 2rem;
   width: 100%;
   margin: 0;
   padding: 0.25rem;
   border: 1px solid var(--charcoal);
-}
+} */
 
 textarea {
   height: 4rem;
@@ -102,7 +207,7 @@ textarea {
 
 button {
   height: 2.5rem;
-}
+} */
 
 form>* {
   margin-top: 1rem;
@@ -112,14 +217,14 @@ form>* {
 }
 
 #navbar {
-  display: flex;
-  background-color: var(--deep-blue);
+  background-color: gray;
   color: var(--white);
   border-bottom: 4px solid var(--deep-red);
 }
 
 #navbar a {
-  color: var(--white);
+  color:white; 
+
 }
 
 .navbar-items {
@@ -144,15 +249,16 @@ form>* {
 }
 
 .navbar-logo a {
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
 }
 
 #footer {
-  display: flex;
+  
   margin-top: auto;
-  background-color: var(--deep-blue);
+  background-color: gray;
   color: var(--white);
-  height: 200px;
-  border-top: 4px solid var(--deep-red);
+  height: 120px;
+  border-top: 4px solid red;
 }
+

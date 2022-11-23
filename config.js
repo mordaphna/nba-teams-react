@@ -1,7 +1,7 @@
-// Use this for configuration settings instead of scattering config "constants"
-// throughout your application
-export const API_BASE = "https://api.squiggle.com.au";
-export const API_ENDPOINT = `${API_BASE}/?q=teams`;
+// Use this for configuration settings in                                               
+export const API_BASE = "https://www.balldontlie.io/api/v1/teams";
+
+// export const API_ENDPOINT = `${API_BASE}/?q=teams`;
 
 // NOTE: the common approach is to set these values from environment variables
 // and not to have the values "hard-coded" with the code.

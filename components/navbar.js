@@ -2,6 +2,7 @@
 // That is because Next.js provides some special features
 // To allow client-side route navigation
 import Link from "next/link";
+import Image from 'next/image'
 
 // Just a generic Navbar, part of the default layout
 // so it appears on all pages that use the default layout
@@ -9,12 +10,23 @@ export default function Navbar() {
   return (
     <div id="navbar">
       <div className="container">
+
         <div className="row navbar-items">
+
           <div className="item navbar-logo">
+
             <div className="content">
-              <Link href="/">Australian Football</Link>
+            <Image
+              src="/nba.png"
+              alt="nba logo"
+              width={70}
+              height={100}
+            />
+            <Link href="/">NBA Teams</Link>
+
             </div>
           </div>
+
           <div className="item navbar-menu">
             <div className="content">
               <ul>
@@ -24,7 +36,9 @@ export default function Navbar() {
               </ul>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
   )

@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer id="footer">
       <div className="container">
-        <div className="row">
+        <div className="row">                  
           <div className="item">
             <div className="content">
-              &copy; 2022 A Football Company
+              &copy; 2022 NBA team data
             </div>
           </div>
         </div>
