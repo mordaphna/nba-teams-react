@@ -26,7 +26,7 @@ export default function ContactPage() {
     event.preventDefault();
     const response = await postContactForm(formData);
     //check status for succsess or errors
-    // console.log(formData)
+ 
     setFormResponseStatus(response.status);
 }
 
